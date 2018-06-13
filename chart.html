@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>nopCommerce</title>
+
+  <!-- 3rd party css \-->
+  <link rel="stylesheet" type="text/css" href="3rd/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fa-brands.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fa-regular.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fa-solid.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="3rd/fa/css/fontawesome-all.min.css">
+
+  <!-- 3rd party js -->
+  <script src="3rd/jquery.js"></script>
+  <script src="3rd/popper.min.js"></script>
+  <script src="3rd/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- own css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="3rd/moment.min.js"></script>
+  <script src="3rd/Chart.min.js"></script>
+
+  <script src="3rd/codecamp.js"></script>
+
+  <!-- own js -->
+  <script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row" id="wrap-top-nav">
+      <div class="col-md-2 col-sm-0 d-md-block d-none mh-100 align-middle" id="main-banner">
+        <div class="mh-100 align-middle" id="wrap-main-banner">
+          <img src="img/logo.png" class="d-inline-block mh-100 rounded-circle">
+          <h5 class="d-inline mh-100 align-middle text-white">nopCommerce</h5>
+        </div>
+      </div>
+      <div class="col-md-10 col-sm-12 mh-100 align-middle d-inline-block" id="main-nav">
+        <ul id="main-nav-sub" class="d-inline-block float-right">
+          <li class="text-white">John Smith</li>
+          <li class="">
+            <a href="javascript:void(0)" class="text-white">Logout</a>
+          </li>
+          <li class="">
+            <a href="javascript:void(0)" class="fas fa-cogs text-white"></a>
+          </li>
+        </ul>
+        <a id="btnCollapse" href="javascript:void(0)" class="d-table-cell align-middle fas fa-bars fa-sm text-white"></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-sm-0 d-md-block d-none" id="left-nav">
+        <ul>
+          <li>
+            <div class="form-group" id="search-box">
+              <label for="txtSearch"><i class="fas fa-search"></i></label>
+              <input type="email" class="form-control" id="txtSearch" placeholder="Search">
+            </div>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-desktop"></b>
+              Dashboard
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-book"></b>
+              Catalog
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Charts</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-shopping-cart"></b>
+              Sales
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-user"></b>
+              Customers
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-tags"></b>
+              Promotions
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-cubes"></b>
+              Content management
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="w-100">
+              <i></i>
+              <b class="fas fa-cogs"></b>
+              Configuration
+              <span class="fas fa-angle-left"></span>
+            </a>
+            <ul class="left-nav-sub">
+              <li>
+                <a href="javascript:void(0)" class="w-100 active"><b class="far fa-dot-circle"></b> Products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Categories</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Manufacturers</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Bulk edit products</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product reviews</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="w-100"><b class="far fa-dot-circle"></b> Product tags</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content (Right) -->
+      <div class="col-md-10 col-sm-12" id="main-content">
+
+
+        <h2 class="float-left">Chart</h2>
+        <div class="float-right" id="main-action-btn">
+
+          <button id="btnAddNewChart" class="btn btn-primary" data-toggle="modal" data-target="#modalAddNewChart"><i class="fas fa-plus-square"></i>Add a new chart</button>
+
+          <button id="btnRemoveChart" class="btn btn-danger" data-toggle="modal" data-target="#modalDeleteChart"><i class="fas fa-trash-alt"></i>Delete chart</button>
+
+        </div>
+
+        <div style="clear: both"></div>
+
+        <div class="card" id="main-form">
+          <div id="chart-area-wrapper" class="card-body">
+
+            <div id="chart-area" class="row">
+              <canvas class="chart-box col-md-6"></canvas>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- End : Main Content (Right) -->
+
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalAddNewChart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add a new chart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="txtChartLabel">Chart label</label>
+            <input type="text" class="form-control" id="txtChartLabel" placeholder="Please enter chart label here.">
+            <small id="errorText" class="text-danger">Please enter chart label !!!!!!</small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="btnCancelNewChart" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button id="btnSubmitNewChart" type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalDeleteChart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Delete chart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div id="wrap-delete-btn" class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button id="btnCancelNewChart" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/mychart.js"></script>
+
+</body>
+
+</html>
